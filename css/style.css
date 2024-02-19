@@ -1,0 +1,90 @@
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}
+
+/* &======sidebar====== */
+#sidebar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+a{
+    text-decoration: none;
+}
+.close {
+    top: 3%;
+    left: 70%;
+    font-size: 35px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar-container {
+    width: 300px;
+    height: 100vh;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    display: none;
+}
+.redHover:hover {
+    color: brown !important;
+}
+.lista a{
+    transition: color 0.3s ease-in-out;
+}
+.openIcon i{
+color: rgb(32, 2, 60);
+z-index: 999999;
+position: fixed;
+top: 50%;
+vertical-align: center;
+cursor: pointer;
+background-color: rgba(235, 206, 248, 0.543);
+}
+
+
+/* *header */
+#heading {
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    position: relative;
+}
+.overlay-head {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 17, 0, 0.444);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.head-content {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+/* slider-down */
+.center-button {
+    text-align: center !important;
+}
+
+/* countdown */
+.counter {
+    padding: 20px;
+    border: 10px solid rgba(166, 150, 150, 0.583);
+    height: 100px;
+}
+
